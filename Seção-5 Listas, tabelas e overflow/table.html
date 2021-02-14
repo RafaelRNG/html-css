@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        th{
+            background: red;
+            border: 2px solid rgb(151, 98, 60);
+        }
+
+        td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background: beige;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Tabela de preços de cursos</caption>
+
+        <thead>
+            <tr>
+                <th>Área</th>
+                <th>Curso</th>
+                <th>Investimento</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valores sejeitos a alterações sem prévio aviso</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">TI</td>
+                <td>Programação web</td>
+                <td>R$ 20,98</td>
+            </tr>
+            <tr>
+                <td>Programação funcional</td>
+                <td>R$ 20,98</td>
+            </tr>
+            <tr>
+                <td>administração</td>
+                <td>Processos gerenciais</td>
+                <td>R$ 20,98</td>
+            </tr>
+            <tr>
+                <td>Logistica</td>
+                <td>Mapeamento de rotas</td>
+                <td>R$ 20,98</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
