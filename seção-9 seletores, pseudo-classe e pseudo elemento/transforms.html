@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .div1 {
+            width: 150px;
+            height: 50px;
+            background: red;
+            transform: translate(50px, 50px);
+        }
+
+        .div2 {
+            width: 150px;
+            height: 50px;
+            background: blue;
+            position: relative;
+            left: 50%;
+        }
+
+        .div3 {
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div3-interna {
+            background: yellow;
+            transform: translateX(80%);
+        }
+
+        .div4 {
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div4-interna {
+            background: yellow;
+            transform: rotate(45deg);
+        }
+
+        .div5 {
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div5-interna {
+            background: yellow;
+            transform: rotate(10deg);
+            transform-origin: left top;
+        }
+
+        .div6 {
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div6-interna {
+            background: yellow;
+            transform: rotate(30deg) translate(30px);
+
+        }
+
+        .div7 {
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div7-interna {
+            background: yellow;
+            transform: translate(30px) rotate(30deg);
+        }
+
+        .div8 {
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transform: skewY(20deg);
+        }
+
+        .div9 {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            transform: scaleX(1.5) translateX(50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1"> div 1</div>
+    <div class="div2"> div 2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">conteudo qualquer</div>
+        <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit metus egestas lectus sapien vitae in curae et nunc
+            quis dapibus aliquet curabitur duis class senectus proin quam montes nullam mus nascetur phasellus fames
+            augue bibendum nulla nec mi eu sem non dignissim maximus litora pretium malesuada netus himenaeos volutpat
+            interdum posuere eros pellentesque tincidunt inceptos cras turpis torquent consequat neque mauris arcu
+            ullamcorper sodales cursus lobortis natoque sociosqu nostra maecenas rhoncus
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div4">
+        <div class="div4-interna">conteudo qualquer</div>
+        <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit metus egestas lectus sapien vitae in curae et nunc
+            quis dapibus aliquet curabitur duis class senectus proin quam montes nullam mus nascetur phasellus fames
+            augue bibendum nulla nec mi eu sem non dignissim maximus litora pretium malesuada netus himenaeos volutpat
+            interdum posuere eros pellentesque tincidunt inceptos cras turpis torquent consequat neque mauris arcu
+            ullamcorper sodales cursus lobortis natoque sociosqu nostra maecenas rhoncus
+        </p>
+    </div>
+    <hr>
+
+    <div class="div5">
+        <div class="div5-interna">conteudo qualquer</div>
+        <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit metus egestas lectus sapien vitae in curae et nunc
+            quis dapibus aliquet curabitur duis class senectus proin quam montes nullam mus nascetur phasellus fames
+            augue bibendum nulla nec mi eu sem non dignissim maximus litora pretium malesuada netus himenaeos volutpat
+            interdum posuere eros pellentesque tincidunt inceptos cras turpis torquent consequat neque mauris arcu
+            ullamcorper sodales cursus lobortis natoque sociosqu nostra maecenas rhoncus
+        </p>
+    </div>
+
+    <div class="div6">
+        <div class="div6-interna">conteudo qualquer</div>
+        <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit metus egestas lectus sapien vitae in curae et nunc
+            quis dapibus aliquet curabitur duis class senectus proin quam montes nullam mus nascetur phasellus fames
+            augue bibendum nulla nec mi eu sem non dignissim maximus litora pretium malesuada netus himenaeos volutpat
+            interdum posuere eros pellentesque tincidunt inceptos cras turpis torquent consequat neque mauris arcu
+            ullamcorper sodales cursus lobortis natoque sociosqu nostra maecenas rhoncus
+        </p>
+    </div>
+
+    <div class="div7">
+        <div class="div7-interna">conteudo qualquer</div>
+        <p>
+            lorem ipsum dolor sit amet consectetur adipiscing elit metus egestas lectus sapien vitae in curae et nunc
+            quis dapibus aliquet curabitur duis class senectus proin quam montes nullam mus nascetur phasellus fames
+            augue bibendum nulla nec mi eu sem non dignissim maximus litora pretium malesuada netus himenaeos volutpat
+            interdum posuere eros pellentesque tincidunt inceptos cras turpis torquent consequat neque mauris arcu
+            ullamcorper sodales cursus lobortis natoque sociosqu nostra maecenas rhoncus
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="div8"> div 8</div>
+    <div class="div9"> div 9</div>
+</body>
+
+</html>

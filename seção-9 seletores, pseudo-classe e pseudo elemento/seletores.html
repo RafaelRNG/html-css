@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        article:nth-child(1) a {
+            color: red;
+        }
+
+        article:nth-child(3)>p {
+            color: orange;
+        }
+
+        article:nth-child(5) h3+p {
+            margin-top: 50px;
+            color: purple;
+        }
+
+        article:nth-child(7) h3~p {
+            color: #FFF;
+        }
+
+        article:not(.destaque) {
+            color: orange;
+        }
+
+        .destaque {
+            background: yellow;
+        }
+
+        a[href="#"] {
+            opacity: .2;
+        }
+
+        a[href^="http"] {
+            color: red;
+        }
+
+        a[title] {
+            color: green;
+        }
+
+        a[href$=".pdf"] {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p>
+            paragrafo
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+        </p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p>
+            paragrafo
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+        </p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p>
+            paragrafo
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+        </p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h3>
+            titulo
+        </h3>
+        <p>
+            paragrafo
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+        </p>
+    </article>
+    <hr>
+
+    <article class="destaque">
+        <h3>
+            titulo
+        </h3>
+        <p>
+            paragrafo
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+            <a href="#">Apenas um link com <b>negrito</b></a>
+        </p>
+    </article>
+
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="http://www.google.com" target="_blank">Link externo</a></li>
+        <li><a href="../introdução/box-sizing.html" title="veja exercicio">Link interno</a></li>
+        <li><a href="/#/idade.pdf" title="veja exercicio">Link interno</a></li>
+    </ul>
+</body>
+
+</html>

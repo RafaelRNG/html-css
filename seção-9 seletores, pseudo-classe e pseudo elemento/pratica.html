@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a[target="_blank"]::after {
+            content: url(../projeto-strata/images/thumbs/01.jpg);
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        a[href$=".pdf"]::before {
+            content: url(../projeto-strata/images/thumbs/04.jpg);
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .chk {
+            display: inline-block;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+            background: #bbb;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+
+        label {
+            height: 15px;
+            display: inline-block;
+        }
+
+        input[type="checkbox"] {
+            visibility: hidden;
+            margin: 0;
+        }
+
+        input[type="checkbox"]:checked+label .chk {
+            background: #555;
+            position: relative;
+        }
+
+        input[type="checkbox"]:checked+label .chk:before {
+            content: url();
+            display: block;
+            position: absolute;
+            top: 4px;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            border: 2px solid white;
+            transform: rotate(45deg);
+            border-top-color: transparent;
+            border-left-color: transparent;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="http://serfrontend.com" target="_blank">link externo</a>
+    <br>
+    <a href="arquivo.pdf">Download do PDF</a>
+
+    <input type="checkbox" name="qq" id="chk">
+    <label for="chk"><span class="chk"></span> li e aceito o contrato</label>
+</body>
+
+</html>
