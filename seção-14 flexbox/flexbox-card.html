@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+
+    <style>
+        .cardContainer {
+            display: flex;
+        }
+
+        .cardFlex {
+            border: 1px solid black;
+            width: 30%;
+            padding: 10px;
+            margin: 5px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cardFlex p {
+            flex-grow: 1;
+        }
+
+        .cardFlex button {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>display flex</h2>
+    <p>Acomodar ou distribuir elementos de modo fácil</p>
+    <p>Ajuda a centralizar na vertical</p>
+
+    <section class="cardContainer">
+        <article class="cardFlex">
+            <h3>titulo</h3>
+            <p>hweuifhwifhwiehfuiewhfuiwhfiuewhfui hwihf wiuh iwu hif hwuifhewuih</p>
+            <button>vai</button>
+        </article>
+
+        <article class="cardFlex">
+            <h3>titulo</h3>
+            <p>hweuifhwifhwiehfuiewhfuiwhfiuewhfui hwihf wiuh iwu hif hwuifhewuih</p>
+            <button>vai</button>
+        </article>
+
+        <article class="cardFlex">
+            <h3>titulo</h3>
+            <p>hweuifhwifhwiehfuiewhfuiwhfiuewhfui hwihf wiuh iwu hif hwuifhewuih</p>
+            <button>vai</button>
+        </article>
+    </section>
+</body>
+
+</html>
